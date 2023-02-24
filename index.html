@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+<style>
+    :root{
+--bgColor :rgba(228,240,255,255);
+--boxBg :rgba(229,232,255,255);
+--aBg :rgba(254,253,206,255);
+--shadow :1px 1px 0px #fff;
+--txtClr: #333;
+    
+    }
+ div.contain{
+    background-color:var(--bgColor);
+    width: 75vw;
+    height: 75vh;
+    margin: auto;
+    padding: 50px;
+    text-align: right;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+div.contain div.items{
+    background-color: var(--boxBg);
+    color: var(--txtClr);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    line-height: 100px;
+}
+div.contain div.items:hover{
+    background-color: var(--aBg);
+}
+div.contain div.items1{
+    /* background-color: var(--boxBg); */
+    text-align: left;
+    padding: 0 50px;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    
+}
+
+div.items1 div.items{
+    padding: 0 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+div.contain div.items .pic1{
+    float: left;
+}
+@media only screen and (max-width: 500px){
+    div.contain{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+} 
+</style>
+</head>
+<body>
+    <div class="contain">
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Index</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Data</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Geometry</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Number</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Puzzles</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Money</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Algebra</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> </div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Calculus</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> physics</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Math</div>
+        <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Dictionary</div>
+
+        <div class="items1">
+            <div class="items"> <img src = "khan.jpg" width = "150px" height = "90px" class = "pic1">Worksheet</div>
+            <div class="items"><img src = "khan.jpg" width = "150px" height = "90px" class = "pic1"> Measurement</div> 
+        </div>
+    
+    </div>
+</body>
+</html>
